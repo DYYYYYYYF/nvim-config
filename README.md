@@ -1,24 +1,24 @@
 # nvim-config
-my nvim config files\n
+my nvim config files. 
 
-base on lua language\n
-some mappings:\n
-nvim-tree <leader>t   //文件目录\n
-lspconfig   //Lsp协议\n
-luasnip     //基础luasnip\n
-nvim-cmp    //自动补全\n
-telescope <leader>f   //文件查找\n
-symbols-outline <leader>s   //文件中函数方法树\n
-colorscheme {gruvbox || everforest}   //主题颜色\n
-\n
-up    -- j\n
-down  -- k\n
-left  -- h\n
-right -- l\n
-\n
-save  -- :wa\n
-quit  -- :q\n
-\n
-input -- i\n
-normal -- Esc\n
-visual -- v\n
+base on lua language  
+some mappings:  
+文件目录：  nvim-tree  &nbsp;&nbsp;&lt;leader&gt;t  
+文件查找： telescope  &nbsp;&nbsp;&lt;leader&gt;f      
+文件中函数方法树： symbols-outline  &nbsp;&nbsp;&lt;leader&gt;s  
+Lsp协议：  lspconfig       
+luasnip：  luasnip         
+自动补全： nvim-cmp       
+主题颜色： colorscheme {gruvbox || everforest}     
+  
+up    -- j  
+down  -- k  
+left  -- h  
+right -- l  
+   
+save  -- :wa  
+quit  -- :q  
+  
+input -- i  
+normal -- Esc  
+visual -- v  
