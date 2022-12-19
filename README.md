@@ -22,3 +22,5 @@ quit  -- :q
 input -- i  
 normal -- Esc  
 visual -- v  
+
+Environment:&nbsp;MacOS&nbsp; Monterey&nbsp; 12.3&nbsp; M1  
