@@ -8,7 +8,19 @@ cmp.setup({
       require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
-  mapping = cmp.mapping.preset.insert({
+  --require("clangd_extensions.cmp_scores"),
+  --sorting = {
+  --      comparators = {
+  --          cmp.config.compare.kind,
+  --          cmp.config.compare.offset,
+  --          cmp.config.compare.exact,
+  --          cmp.config.compare.recently_used,
+  --          cmp.config.compare.sort_text,
+  --          cmp.config.compare.length,
+  --          cmp.config.compare.order
+  --      },
+  --  },
+    mapping = cmp.mapping.preset.insert({
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-c>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -33,9 +45,11 @@ cmp.setup({
         return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
       end
     },
+    { name = 'nvim_lsp_document_symbol'},
     { name = 'luasnip' }, -- For luasnip users.
   }, {
     { name = 'buffer' },
+    { name = 'nvim_lsp_signature_help'}
   }),
   formatting = {
     format = function(entry, vim_item)

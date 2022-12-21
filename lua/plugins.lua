@@ -15,6 +15,9 @@ return require('packer').startup(function(use)
     tag = 'nightly'
   }
 
+
+  use "p00f/clangd_extensions.nvim"
+
   use 'rmagatti/alternate-toggler'
   use 'windwp/nvim-autopairs'
   use 'mg979/vim-visual-multi'
@@ -36,6 +39,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'hrsh7th/cmp-nvim-lsp-document-symbol'
   use 'onsails/lspkind-nvim'
 
   use 'L3MON4D3/LuaSnip'

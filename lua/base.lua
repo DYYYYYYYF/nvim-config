@@ -9,7 +9,7 @@ opt.fileencoding = 'utf-8'
 
 opt.scrolloff = 12
 
-opt.hlsearch = true
+opt.hlsearch = false
 opt.incsearch = true
 
 opt.mouse = 'a'
@@ -17,7 +17,7 @@ opt.clipboard:append('unnamedplus')
 
 opt.tabstop = 2
 opt.softtabstop = 2
-opt.shiftwidth = 2
+opt.shiftwidth = 4
 opt.expandtab = true
 
 opt.ignorecase = true
