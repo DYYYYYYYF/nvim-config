@@ -1,22 +1,18 @@
-require('base')
-require('plugins')
-require('p-mason')
-require('p-lsp')
-require('p-tree')
-require('color')
-require('text')
-require('p-lualine')
-require('p-telescope')
-require('p-bookmark')
-require('p-lspkind')
-require('p-cmp')
-require('p-null')
-require('p-snip')
-require('p-treesitter')
---require('style')
-require('other')
-require('myself/cmake')
-require('myself/filetype')
---require('p-ufo')
-require('symbolsoutline')
-require('maps')
+-- init.lua
+
+-- Bootstrap Lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "https://github.com/folke/lazy.nvim.git",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Load plugins and config from lua/plugins
+require("lazy").setup({ import = "plugins" })
+require("base")
+require("maps")

@@ -33,11 +33,3 @@ opt.list = true
 opt.cursorline = true
 opt.termguicolors = true
 
-vim.api.nvim_create_autocmd('TextYankPost', {
-        callback = function()
-                vim.highlight.on_yank({
-                        higroup = 'IncSearch',
-                        timeout = 300
-                })
-        end
-})
