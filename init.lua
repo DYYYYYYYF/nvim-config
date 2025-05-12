@@ -12,7 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Load plugins and config from lua/plugins
-require("lazy").setup({ import = "plugins" })
+-- Base config, set before load lazy module.
 require("base")
 require("maps")
+
+-- Load plugins and config from lua/plugins
+require("lazy").setup({ import = "plugins" })
