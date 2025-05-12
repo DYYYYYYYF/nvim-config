@@ -10,14 +10,6 @@ keymap.set('n', 'H', '^')
 keymap.set('n', 'L', '$')
 
 local opts = { noremap = true, silent = true }
---keymap('n', "gt", ":BufferLineCycleNext<CR>", opts)
---keymap('n', "gT", ":BufferLineCyclePrev<CR>", opts)
---keymap('n', "<leader>bc", ":bdelete<CR>", opts)
---keymap('n', "<leader>be", ":BufferLineSortByExtension<CR>", opts)
---keymap('n', "<leader>bd", ":BufferLineSortByDirectory<CR>", opts)
-
-keymap.set('n', '<leader>t', '<cmd>NvimTreeToggle<cr>', { noremap = true, silent = true })
---keymap.set('n', "<leader>s", ":SymbolsOutline<CR>", opts)
 
 -- cmake source mapping
 keymap.set('n', "<leader><leader>s", ":!cmake -S . -B build<CR>", {noremap = true})

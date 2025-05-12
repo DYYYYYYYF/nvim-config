@@ -3,6 +3,9 @@ return {
     {
       "nvim-tree/nvim-tree.lua",
       dependencies = { "nvim-tree/nvim-web-devicons" }, -- 如果需要图标支持
+      keys = {
+        {'<leader>t', '<cmd>NvimTreeToggle<cr>'}
+      },
       config = function()
          -- 引入 lspkind 插件用于自定义图标
         local lspkind = require('lspkind')
@@ -78,18 +81,6 @@ return {
           },
         })
       end
-    },
-
-    -- Gruvbox 主题
-    {
-      "morhetz/gruvbox",
-      config = function()
-        -- 启用 gruvbox 主题
-        vim.cmd([[colorscheme gruvbox]])
-
-        -- 设置主题选项（可根据需要自定义）
-        vim.o.background = "dark"  -- 你可以选择 "light" 或 "dark" 主题
-      end,
     },
   }
   
