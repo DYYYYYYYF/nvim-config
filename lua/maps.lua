@@ -14,6 +14,6 @@ local opts = { noremap = true, silent = true }
 -- cmake source mapping
 keymap.set('n', "<leader><leader>s", ":!cmake -S . -B build<CR>", {noremap = true})
 -- cmake build mapping
-keymap.set('n', "<leader><leader>b", ":!cmake --build build -j3<CR>", {noremap = true})
+keymap.set('n', "<leader><leader>b", ":!cmake --build build -j4<CR>", {noremap = true})
 -- cmake test mapping
 keymap.set('n', "<leader><leader>t", ":!cmake --build build -j2 --target test<CR>", {noremap = true})
