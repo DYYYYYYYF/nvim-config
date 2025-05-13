@@ -11,5 +11,15 @@ return {
         vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn",  { fg = "#fabd2f", bg = "NONE" })
         vim.api.nvim_set_hl(0, "DiagnosticVirtualTextInfo",  { fg = "#83a598", bg = "NONE" })
         vim.api.nvim_set_hl(0, "DiagnosticVirtualTextHint",  { fg = "#8ec07c", bg = "NONE" })
+
+        vim.cmd [[
+            highlight DiagnosticError guifg=#fb4934 guibg=NONE
+            highlight DiagnosticWarn  guifg=#fabd2f guibg=NONE
+            highlight DiagnosticInfo  guifg=#83a598 guibg=NONE
+            highlight DiagnosticHint  guifg=#8ec07c guibg=NONE
+        ]]
+
+        -- 避免错误信息的红色背景(vim自身的输出)
+        vim.cmd [[highlight ErrorMsg guifg=Red guibg=NONE]]
     end,},
 }
