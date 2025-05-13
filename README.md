@@ -1,6 +1,11 @@
 # nvim-config
 **Neovim官方**：https://neovim.io。
 
+**Tips**：
+如果之前有nvim缓存建议先清空。  
+MacOS / Linux：``rm -rf ~/.local/share/nvim/``  
+Windows：``Remove-Item "$env:LOCALAPPDATA\nvim-data\packer" -Recurse -Force``
+
 **配置目录：**(如果不存在则需要手动创建)
 
 | 平台          | 配置路径            |
