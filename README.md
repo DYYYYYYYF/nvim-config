@@ -27,13 +27,14 @@
 
 **特殊使用：**作者使用的<leader>键为``` '```
 
-| 功能                     | 快捷键                        |
-| ------------------------ | ----------------------------- |
-| 文件目录                 | &lt;leader&gt;t               |
-| 函数目录                 | &lt;leader&gt;s               |
-| 编译CMake并生成build目录 | &lt;leader&gt;&lt;leader&gt;s |
-| 编译C/C++项目            | &lt;leader&gt;&lt;leader&gt;b |
-| 编译C/C++项目（测试）    | &lt;leader&gt;&lt;leader&gt;n |
+| 功能                     | 快捷键                         |
+| ------------------------ | ------------------------------ |
+| 文件目录                 | &lt;leader&gt;t                |
+| 函数目录                 | &lt;leader&gt;s                |
+| 编译CMake并生成build目录 | &lt;leader&gt;&lt;leader&gt;s  |
+| 编译C/C++项目            | &lt;leader&gt;&lt;leader&gt;b  |
+| 编译C/C++项目（测试）    | &lt;leader&gt;&lt;leader&gt;n  |
+| 查找文件                 | &lt;leader&gt;&lt;leader&gt;ff |
 
 **Environment:**
 
