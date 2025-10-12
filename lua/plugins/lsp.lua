@@ -20,12 +20,12 @@ return {
   -- 安装 nvim-lspconfig.nvim
   {
     "neovim/nvim-lspconfig",
+
     config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.clangd.setup{}    -- 使用 mason 安装的 clangd
-      lspconfig.cmake.setup{}
-      lspconfig.pyright.setup{}
-      lspconfig.lua_ls.setup{}
+        vim.lsp.enable("clang")
+        vim.lsp.enable("cmake")
+        vim.lsp.enable("pyright")
+        vim.lsp.enable("lua_ls")
     end,
   },
 }
