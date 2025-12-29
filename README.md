@@ -1,5 +1,13 @@
-# nvim-config (Version > 0.7.0)
+# nvim-config (Version > 0.8.0)
 **Neovim官方**：https://neovim.io。
+
+**下载**  
+```
+## Linux/macOS
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+sudo apt install neovim
+```
 
 **配置路径**  
 > **Windows**：`` %LOCALAPPDATA%\nvim``   
