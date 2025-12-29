@@ -1,4 +1,4 @@
-# nvim-config
+# nvim-config (Version > 0.7.0)
 **Neovim官方**：https://neovim.io。
 
 **配置路径**  
