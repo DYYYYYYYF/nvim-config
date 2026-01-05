@@ -17,7 +17,9 @@ return {
           },
           mapping = cmp.mapping.preset.insert({
             ["<C-Space>"] = cmp.mapping.complete(),
-            ["<CR>"] = cmp.mapping.confirm({ select = true }),
+            ["<CR>"] = cmp.mapping.confirm({
+                select = false, -- 如果当前没选中（蓝色高亮）列表里的项，按下回车就是普通的换行
+            }),
             ["<Tab>"] = cmp.mapping(function(fallback)
               if cmp.visible() then
                 cmp.select_next_item()

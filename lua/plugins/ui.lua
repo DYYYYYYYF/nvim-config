@@ -4,6 +4,7 @@ return {
       "nvim-tree/nvim-tree.lua",
       dependencies = { "nvim-tree/nvim-web-devicons" }, -- 如果需要图标支持
       keys = {
+        -- 不能删除，这个是在打开tree的情况下关闭tree,与nvim-tree中的keymap不冲突！
         {'<leader>t', '<cmd>NvimTreeToggle<cr>'}
       },
       config = function()

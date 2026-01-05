@@ -3,6 +3,9 @@ vim.diagnostic.config({
       prefix = "●", -- 行前小图标，可以改成 "" 只保留文字
       spacing = 2,  -- 与代码间距
     },
+    float = {
+        border = 'rounded',
+    },
     signs = true,        -- 左侧栏图标
     underline = true,    -- 波浪线
     update_in_insert = false, -- 插入模式不更新
