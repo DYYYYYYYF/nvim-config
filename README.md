@@ -55,13 +55,20 @@ tips：如果使用的**Ubuntu/RaspberryPi**这类操作系统是，下载neovim
 
 | 功能                     | 快捷键                        |
 | ------------------------ | ----------------------------- |
-| 文件目录                 | &lt;leader&gt;t               |
 | 函数目录                 | &lt;leader&gt;s               |
 | 查找文件                 | &lt;leader&gt;ff              |
 | 查找文件（缓冲区）       | &lt;leader&gt;fb              |
 | 编译CMake并生成build目录 | &lt;leader&gt;&lt;leader&gt;s |
 | 编译C/C++项目            | &lt;leader&gt;&lt;leader&gt;b |
 | 编译C/C++项目（测试）    | &lt;leader&gt;&lt;leader&gt;t |
+
+**Neo-Tree：**
+
+| 功能            | 快捷键           |
+| --------------- | ---------------- |
+| 文件目录        | &lt;leader&gt;tt |
+| 新建Session/Tab | &lt;leader&gt;tn |
+| 关闭Session/Tab | &lt;leader&gt;tc |
 
 **Diagnostis：**
 

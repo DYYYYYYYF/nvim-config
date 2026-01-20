@@ -14,6 +14,21 @@ return {
       keys = {
         { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "🔍 查找文件" },
         { "<leader>fb", "<cmd>Telescope buffers<cr>",    desc = "📑 缓冲区" },
+
+         -- 用 Telescope 选择目录后在新 tab 打开
+       { '<leader>tn', function()
+            vim.ui.input({ 
+              prompt = '📁 Project path: ', 
+              default = vim.fn.expand('.'),
+              completion = 'dir',
+            }, function(path)
+              if path and path ~= '' then
+                vim.cmd('tabnew')
+                vim.cmd('cd ' .. vim.fn.expand(path))
+                vim.cmd('Neotree')
+              end
+            end)
+          end, desc = "📁 New tab with directory" },
       },
       config = function()
         local telescope = require("telescope")
