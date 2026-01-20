@@ -33,3 +33,23 @@ vim.keymap.set('n', ']e', function()
   vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
 end, opts)
 
+    
+vim.api.nvim_set_keymap('n', '<leader>tn', '', {
+  noremap = true,
+  silent = true,
+  callback = function()
+    vim.ui.input({
+      prompt = '📁 Project path: ',
+      default = vim.fn.expand('.'),  -- 默认路径为当前目录
+      completion = 'dir',  -- 提供目录补全
+    }, function(path)
+      if path and path ~= '' then
+        -- 创建新标签页，打开一个空文件并为标签设置名称
+        vim.cmd('tabnew ')
+        -- 切换到用户指定的目录
+        vim.cmd('cd ' .. vim.fn.fnameescape(path))
+      end
+    end)
+  end,
+  desc = "📁 New tab with directory"
+})

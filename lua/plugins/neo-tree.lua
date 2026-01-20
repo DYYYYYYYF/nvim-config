@@ -1,7 +1,6 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
@@ -66,7 +65,7 @@ return {
         
         window = {
           position = "left",
-          width = 40,
+          width = 30,
         },
         
         filesystem = {
@@ -92,28 +91,8 @@ return {
           },
         },
       })
-      
-      -- ✅ 修复 2: 自定义 tabline 显示目录名
-      function _G.custom_tabline()
-        local s = ''
-        for i = 1, vim.fn.tabpagenr('$') do
-          local cwd = vim.fn.getcwd(-1, i)
-          local dirname = vim.fn.fnamemodify(cwd, ':t')
-          
-          if i == vim.fn.tabpagenr() then
-            s = s .. '%#TabLineSel#'
-          else
-            s = s .. '%#TabLine#'
-          end
-          
-          s = s .. ' ' .. i .. ':' .. dirname .. ' '
-        end
-        
-        s = s .. '%#TabLineFill#%T'
-        return s
-      end
-      
-      vim.o.tabline = '%!v:lua.custom_tabline()'
-    end
+
+    -- config
+    end 
   },
 }
