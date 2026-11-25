@@ -14,6 +14,8 @@ return {
       keys = {
         { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "🔍 查找文件" },
         { "<leader>fb", "<cmd>Telescope buffers<cr>",    desc = "📑 缓冲区" },
+        { "<leader>fg", "<cmd>Telescope live_grep<cr>",   desc = "🔍 全文搜索" },
+        { "<leader>fw", "<cmd>Telescope grep_string<cr>", desc = "🔎 搜索光标下单词" },
       },
       config = function()
         local telescope = require("telescope")
